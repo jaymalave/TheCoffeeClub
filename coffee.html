@@ -1,0 +1,206 @@
+<html>
+    <head>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+     <style>
+
+         body {
+             background-color: antiquewhite;
+             height: 200vh;
+             width: auto;
+             overflow-x: hidden;
+         }
+         .container, .container-2, .container-3 {
+             margin-top: 15vh;
+             display: flex;
+             background-color: antiquewhite;
+             justify-content: space-around;
+             position: relative;
+             
+             
+
+         }
+
+
+         .coffee {
+             background-color: chocolate;
+             box-sizing: border-box;
+             border-radius: 5px;
+             padding: 10px;
+             border-style: none;
+             text-align: center;
+             height: 50px;
+             width: 200px;
+             color:azure;
+             font-size: 1.5em;
+             font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+             cursor:pointer;
+             opacity: 1;
+             position: relative;
+             
+         }
+
+         .coffee:hover {
+         transform: scale(1.5);
+         transition: 2s;
+         }
+
+   h1 {
+       text-align: center;
+       font-size: 9vh;
+       margin-top: 25px;
+       font-family: 'Patrick Hand', cursive;
+       color: rgb(165, 68, 26);
+       
+   }
+
+   h2 {
+       text-align: center;
+       font-size: 6vh;
+       color:rgb(165, 68, 26);
+   }
+
+   .info {
+       margin-top: 30vh;
+       padding: 10px;
+   }
+
+   .cafe {
+     padding: 30px;
+     height: 95vh;
+     text-align: center;
+
+   }
+
+   p {
+       padding: 10px;
+       text-align: center;
+       font-size: 3vh;
+       color: brown;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+
+   img {
+       width: 300px;
+       height: 300px;
+       
+   }
+
+
+         
+     </style>
+    </head>
+    <body>
+        <h1>The Coffee Club</h1>
+      <div class="container">
+          <div class="coffee espresso" onclick="smoothScroll(document.getElementById('espresso_'))">
+             Espresso
+          </div>
+          <div class="coffee latte" onclick="smoothScroll(document.getElementById('latte_'))">
+             Latte
+          </div>
+          <div class="coffee capuccinno" onclick="smoothScroll(document.getElementById('capuccinno_'))">
+             Capuccinno
+          </div>
+          </div>
+          <div class="container-2">
+          <div class="coffee mocha" onclick="smoothScroll(document.getElementById('mocha_'))">
+            Mocha
+         </div>
+         <div class="coffee macchiato" onclick="smoothScroll(document.getElementById('macchiato_'))">
+            Macchiato
+         </div>
+         <div class="coffee affogato" onclick="smoothScroll(document.getElementById('affogato_'))">
+            Affogato
+         </div>
+      </div>
+      <div class="container-3">
+          <div class="coffee americano" onclick="smoothScroll(document.getElementById('americano_'))">
+              Americano
+          </div>
+          <div class="coffee frappe" onclick="smoothScroll(document.getElementById('frappe_'))">
+              Frappe
+          </div>
+          <div class="coffee irish" onclick="smoothScroll(document.getElementById('irish_'))">
+              Irish
+          </div>
+
+      </div>
+
+      <div class="info">
+          <div class="cafe espresso_" data-aos="zoom-out-down" id = "espresso_">
+           <h2>Espresso</h2>
+             <p>The espresso, also known as a short black, is approximately 1 oz. of highly concentrated coffee. Although simple in appearance, it can be difficult to master.</p>
+             <img src="espresso.png" alt=""/>
+          </div>
+          <div class="cafe latte_" data-aos="zoom-out-down" id="latte_">
+            <h2>Latte</h2>
+              <p>Cafe lattes are considered an introductory coffee drink since the acidity and bitterness of coffee is cut by the amount of milk in the beverage. Flavoring syrups are often added to the latte for those who enjoy sweeter drinks.</p>
+              <img src="latte.png" alt=""/>
+           </div>
+           <div class="cafe capuccinno_" data-aos="zoom-out-down" id="capuccinno_">
+            <h2>Capuccinno</h2>
+              <p>This creamy coffee drink is usually consumed at breakfast time in Italy and is loved in the United States as well. It is usually associated with indulgence and comfort because of its thick foam layer and additional flavorings that can be added to it.</p>
+              <img src="capuccinno.png" alt=""/>
+           </div>
+           <div class="cafe mocha_" data-aos="zoom-out-down" id="mocha_">
+            <h2>Mocha</h2>
+              <p>The mocha is considered a coffee and hot chocolate hybrid. The chocolate powder or syrup gives it a rich and creamy flavor and cuts the acidity of the espresso.</p>
+              <img src="mocha.png" alt=""/>
+           </div>
+           <div class="cafe macchiato_" data-aos="zoom-out-down" id="macchiato_">
+            <h2>Macchiato</h2>
+              <p>The word “macchiato” means mark or stain. This is in reference to the mark that steamed milk leaves on the surface of the espresso as it is dashed into the drink. Flavoring syrups are often added to the drink according to customer preference.</p>
+              <img src="machhiato.png" alt=""/>
+           </div>
+           <div class="cafe affogato_" data-aos="zoom-out-down" id="affogato_">
+            <h2>Affogato</h2>
+              <p>Affogatos are more for a dessert coffee than a drink you would find at a cafe, but they can add a fun twist to your menu. They are made by pouring a shot of espresso over a scoop of vanilla ice cream to create a sweet after-meal treat.</p>
+              <img src="affogato.png" alt=""/>
+           </div>
+           <div class="cafe americano_" data-aos="zoom-out-down" id="americano_">
+            <h2>Americano</h2>
+              <p>Americanos are popular breakfast drinks and thought to have originated during World War II. Soldiers would add water to their coffee to extend their rations farther. The water dilutes the espresso while still maintaining a high level of caffeine.</p>
+              <img src="americano.png" alt=""/>
+           </div>
+           <div class="cafe frappe_" data-aos="zoom-out-down" id="frappe_">
+            <h2>Frappe</h2>
+              <p>Frappe is just a sweet iced coffee blended with milk and espresso, and it makes for the perfect, summer favorite coffee house treat. It is a MUST have coffee drink if you're hanging out at the pool, beach, or even your backyard.</p>
+              <img src="frappe.png" alt=""/>
+           </div>
+           <div class="cafe irish_" data-aos="zoom-out-down" id="irish_">
+            <h2>Irish</h2>
+              <p>Irish coffee is a cocktail consisting of hot coffee, Irish whiskey, and sugar, stirred, and topped with cream.</p>
+              <img src="irish.png" alt=""/>
+           </div>
+      </div>
+
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+        window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+      </script>
+    </body>
+</html>
